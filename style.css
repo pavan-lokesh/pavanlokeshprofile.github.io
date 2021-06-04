@@ -1,0 +1,747 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+    
+    /* ------------------ Universal css ----------- */
+*{
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* --------------- Narbar section ----------- */
+.navbar{
+
+    /* back?ground: crimson ; */
+    position: fixed;
+    width: 100%;
+    padding: 30px 0 ;
+    font-family: 'ubuntu',sans-serif;
+    transition:all  0.3s ease;
+
+
+}
+.navbar.sticky{
+    padding: 15px 0px ;
+    background-color: crimson;
+    z-index: 666666;
+
+}
+
+.max-width{
+
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center ;
+}
+.navbar .logo a{ 
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+.navbar .logo a span{
+    color: crimson;
+}
+.navbar.sticky .logo a span{
+    color: white;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .menu li a:hover{
+    color: grey;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+.navbar .menu li a{
+     
+    color: white
+    ;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: colour 0.3s ease  ;
+
+
+}
+.navbar .menu li a:hover{
+    color: crimson;
+
+}
+
+/* ---------------- Menu btn ------------- */
+.menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* --------------------- Home section ------------- */
+
+.home{
+
+    display: flex;
+    background: url(banner7775599.jpg) no-repeat center ;
+    height: 100vh;
+    color: white;
+    min-height:500px ;
+    font-family: 'ubuntu',sans-serif;
+
+
+
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+
+
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+
+}
+.home .home-content a{
+
+    display: inline-block
+    ;
+    background: crimson;
+    color: white;
+    font-size: 25px;
+    padding:12px 30px ;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 2px solid rgb(236, 0, 0);
+    transition: all 0.3s ease;
+
+}
+.home .home-content a:hover{
+    color: crimson;
+    background:none;
+}
+
+
+
+
+/* -------------- About section ---------- */
+section{
+        padding:100px 0 ;
+    }
+
+.about , .skills{
+
+    font-family: 'poppins',sans-serif;
+
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    z-index: -6;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "Who am I";
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+   
+    bottom: -10px;
+    left: 50%;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+}
+
+.about .about-content{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px ;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right P{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block
+    ;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    padding:8px 30px ;
+    font-weight: 500;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 2px solid rgb(236, 0, 0);
+    transition: all 0.3s ease;
+
+    
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background:none;
+    
+}
+
+
+/* -------------- Services section --------- */
+
+.Services{
+
+    font-family: 'poppins',sans-serif;
+
+}
+.Services .title{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    z-index: 6;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+.Services .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+}
+.Services .title::after{
+    content: "What I Do";
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+   
+    bottom: -10px;
+    left: 50%;
+    padding: 5px;
+    background: rgb(0, 0, 0);
+    transform: translateX(-50%);
+}
+.Services{
+    
+    
+    background-color: black;
+    z-index: 0;
+
+
+}
+.Services .Services-content{
+    display: flex;
+    /* background: black; */
+}
+
+.Services .Services-content .card{
+    width: calc(33% - 20px );
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px ;
+    cursor: pointer;
+    margin: 6px 30px;
+}
+.Services .Services-content .card .box{
+    transition: all 0.3s ease;
+
+
+}
+.Services .Services-content .card .box:hover{
+    transform: scale(1.05);
+}
+.Services .Services-content .card i{
+
+    font-size: 50px;
+    color: rgb(255, 0, 51);
+}
+.Services .Services-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    margin: 20px 0 7px 0;
+}
+.Services .Services-content .card p{
+    color: rgb(80, 74, 74);
+    transition: all 0.3s ease;
+}
+.Services .Services-content .card p:hover{
+
+    color: crimson;
+}
+
+/* ---------------------- Skills section ------------ */
+.skills{
+
+    font-family: 'poppins',sans-serif;
+
+}
+.skills .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    z-index: -6;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+
+.skills .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.skills .title::after{
+    content: "What i know";
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+   
+    bottom: -10px;
+    left: 50%;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+}
+.skills .skills-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+.skills .skills-content  span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content  .line{
+    height: 5px;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+}
+.skills .skills-content .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    
+    left: 0;
+    top: 0;
+    background: crimson;
+    /* z-index: 3; */
+}
+.skills .skills-content .right .html::before{
+    width:90% ;
+    
+}
+.skills .skills-content .right .css::before{
+    width: 60%;
+}
+.skills .skills-content .right .js::before{
+    width: 40%;
+}
+.skills .skills-content .right .node::before{
+    width:70% ;
+}
+.skills .skills-content .right .sql::before{
+    width: 80%;
+}
+.skills .skills-content p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block
+    ;
+    background: crimson;
+    color: white;
+    font-size: 17px;
+    padding:8px 16px ;
+    font-weight: 500;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 2px solid rgb(236, 0, 0);
+    transition: all 0.3s ease;
+
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background:none;
+    
+}
+
+ /* -------------------- hobbies section -------------- */
+
+ .hobbies{
+
+    font-family: 'poppins',sans-serif;
+    background-color: black;
+    color: white;
+
+}
+
+.hobbies .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    z-index: 55;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+
+.hobbies .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+}
+.hobbies .title::after{
+    content: "I'm Intrests";
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+   
+    bottom: -10px;
+    left: 50%;
+    padding: 5px;
+    background: rgb(0, 0, 0);
+    transform: translateX(-50%);
+}
+.hobbies .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px ;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+.hobbies .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50% ;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+    
+}
+.hobbies .carousel .card:hover{
+    background: crimson;
+}
+.hobbies .carousel .card:hover{
+    transform: scale(1.05);
+}
+.hobbies .carousel  .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+
+}
+.hobbies .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.hobbies .carousel .card:hover img{
+
+    border-color: white;
+
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.owl-dot{
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+
+}
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+
+/* --------------- contact section ------------- */
+
+.contact{
+
+    font-family: 'poppins',sans-serif;
+
+}
+.contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    z-index: -6;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu',sans-serif;
+}
+
+.contact .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
+    left: 50%;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.contact .title::after{
+    content: "Talk to me";
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+   
+    bottom: -10px;
+    left: 50%;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+}
+.contact .contact-content .column{
+    width: calc(50%-30px);
+
+}
+.contact .contact-content .left p{
+    text-align: justify;
+
+}
+.contact .contact-content .text{
+
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .row .info .head{
+    font-weight: 500px
+    ;
+}
+.contact .contact-content .row .info .sub-title{
+    color: #333;
+} 
+.contact-content{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.contact-content p{
+    width: 50%;
+}
+#box{
+    left: 100px;
+    transform: translateX(-200px);
+
+}
+.field{
+    padding: 9px;
+}
+.field input{
+
+    width: 100%;
+    height: 40px;
+    padding: 0 100px 0 5px;
+    font-size: 17px;
+    font-family: 'poppins',sans-serif;
+
+    /* text-align: center; */
+}
+.button{
+    width: 300px;
+    height: 200px;
+    padding: 5px 50px;
+    border-radius: 10px;
+}
+.button button{
+    padding: 6px 30px;
+    font-family: 'poppins',sans-serif;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background: crimson;
+    transition: all 0.3s ease;
+
+}
+.button button:hover{
+    background: none;
+    color: crimson;
+    font-size: 14px;
+    transform: translateX(-10);
+}
+
+
+/* ----------- footer ------------ */
+
+
+footer{
+    background: black;
+    padding: 20px 23px;
+    color: white;
+    text-align: center;
+
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+
+}
+footer span a:hover{
+    text-decoration: underline;
+
+}
+
+.scroll-up-btn{
+    position: fixed;
+    width: 42px;
+    background: crimson;
+    height: 45px;
+    right: 30px;
+    bottom: 10px;
+    text-align: center
+    ;
+    line-height: 45px;
+    color: white;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+scroll-up-btn.show{
+    opacity: 0;
+    pointer-events: auto;
+    bottom: 30px;
+
+}
+.contact-content p span{
+    color: crimson;
+}
+
+
+/* .skills .skills-content{
