@@ -11,6 +11,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src='tinymce/tinymce.min.js'></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  />                        
     <title>Aboutme</title>
 </head>
@@ -40,7 +42,7 @@
                 <div class="text-1">Hello , my name is</div>
                 <div class="text-2">Pavan Lokesh</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#">Hire me</a>
+                <a href="https://www.freelancer.com/u/pavan25112004">Hire me</a>
             </div>
         </div>
     </section>
@@ -258,27 +260,27 @@
                 </div>
                 <div class="column right" id="box">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="#" onsubmit="return send()" id= "contact-form">
                         <div class="fields">
                             
                             <div class="field name">
-                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Name" id="Name">
                             </div>
 
                             <div class="field email">
-                                <input type="email" placeholder="Email "required>
+                                <input type="email" placeholder="Email "required id="Email"> 
                             </div>
 
                             <div class="field">
-                                <input type="text" placeholder="subject"required>
+                                <input type="text" placeholder="subject"required id="Subject">
                             </div>
 
                             <div class="field textarea">
-                              <textarea  cols="30" rows="10" placeholde="Describe project.."required></textarea>
+                              <textarea  cols="30" rows="10" placeholder="Describe project.."required id="projdesc"></textarea>
                             </div>
 
                             <div class="button">
-                                <button type="button">Send Message</button>
+                                <button type="button" onclick="return send()">Send Message</button>
                             </div>
 
                         </div>

@@ -692,6 +692,9 @@ section{
     font-size: 14px;
     transform: translateX(-10);
 }
+textarea{
+    font-family: 'poppins', sans-serif;
+}
 
 
 /* ----------- footer ------------ */
