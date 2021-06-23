@@ -1,8 +1,8 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
 const { getMaxListeners } = require('process');
-
 function send(){
+  
+
+
     var nodemailer = require('nodemailer');
 
     const form = document.getElementById("contact-form");
